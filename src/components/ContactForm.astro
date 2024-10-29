@@ -1,0 +1,45 @@
+---
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+---
+
+<section class="py-20 bg-gray-50" id="contact">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4 text-[#0D2845]">Let's Talk About Your Financial Goals</h2>
+      <p class="text-gray-600">
+        Let us help you take charge of your financial future today. Fill out the form below and we'll get back to you soon.
+      </p>
+    </div>
+
+    <div class="max-w-2xl mx-auto">
+      <form class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <Input type="text" placeholder="First Name" required />
+          </div>
+          <div>
+            <Input type="text" placeholder="Last Name" required />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <Input type="email" placeholder="Email Address" required />
+          </div>
+          <div>
+            <Input type="tel" placeholder="Phone Number" required />
+          </div>
+        </div>
+        <div>
+          <Textarea placeholder="Tell us about your financial goals..." rows={4} />
+        </div>
+        <div class="text-center">
+          <Button type="submit" size="lg" class="bg-[#156F89] hover:bg-[#125d73] min-w-[200px]">
+            Let's Connect
+          </Button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
